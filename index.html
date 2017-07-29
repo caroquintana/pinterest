@@ -5,53 +5,79 @@
 	<title>Pinterest</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://use.fontawesome.com/5cf616ccce.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 </head>
 <body>
-<!-- 	<nav>
-		<div class="nav-principal">
-			<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Inicio</a>
-			<input type="text" name="buscador">
-			<select>
+	<nav>
+		<div class="nav-fixed">
+			<a href="#" class="logo"><i class="fa fa-pinterest" aria-hidden="true"></i> Inicio</a>
+			<input type="buscador" type="buscador" class="search">
+			<select class="options">
 				<option value="todo">Todos los pines</option>
 				<option value="navidad">Navidad</option>
 				<option value="otros">Otros</option>
 				<option value="mas">Más otros</option>
 			</select>
-		</div>
-	</nav>	 -->
-	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar-brand" href="#">Navbar</a>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="text" placeholder="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
+			<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			<p class="usuario">Alexandra</p>
+			<i class="fa fa-bars" aria-hidden="true"></i>
+			<img class="notification" src="dist/img/notification.png">		
 		</div>
 	</nav>
-	<section class="photos">
+	<section class="navdos">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col l12 xl12 secciones">
+					<div class="col l1 xl1 casillauno">
+						<p class="clasification">Dress</p>
+					</div>
+					<div class="col l2 xl2 casillados">
+						<p class="clasification">San Miguel de Allende</p>
+					</div>
+					<div class="col l1 xl1 casillatres">
+						<p class="clasification">Friki</p>
+					</div>
+					<div class="col l1 xl1 casillacuatro">
+						<p class="clasification">Invitaciones</p>
+					</div>
+					<div class="col l1 xl1 casillauno">
+						<p class="clasification">Fotography</p>
+					</div>
+					<div class="col l1 xl1 casillados">
+						<p class="clasification">Photocall</p>
+					</div>
+					<div class="col l1 xl1 casillatres">
+						<p class="clasification">Damas</p>
+					</div>
+					<div class="col l1 xl1 casillacuatro">
+						<p class="clasification">Iluminación</p>
+					</div>
+					<div class="col l1 xl1 casillauno">
+						<p class="clasification">Souvenir</p>
+					</div>
+					<div class="col l1 xl1 casillados">
+						<p class="clasification">Invitación</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="todasfotos">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col l12 xl12 totalfotos">
+					
+				</div>
+			</div>
+		</div>
 <!-- 		<div class="singles">
 				<img class="img_pinterest" src="laboratoria/Sprint6/proyecto_final/pinterest/dist/img/1.jpg">
-				<h3>Titulo Json</H3>
+				<h3>Titulo Json</h3>
 				<p>Descripcion lsdkslkdskd</p>
 				<p>Usuario desde JSON #hashtag</p>
 		</div> -->
 	</section>
+
 	<script src="dist/js/script.js"></script>
 </body>
 </html>

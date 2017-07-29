@@ -1,0 +1,20 @@
+@mixin margin_nav {
+	margin-left: 9px;
+	margin-right: 18px;
+}
+@mixin esp_icon{
+	color: darkslategray;
+	display: inline-block;
+	@include margin_nav;
+}
+@mixin casilla {
+	height: 50px;
+	border-radius: 9px;
+	margin-right: 4px;
+	color: white;
+}
+@mixin pclasification{
+    margin-top: 11px;
+    color: white;
+    text-align: center;
+}

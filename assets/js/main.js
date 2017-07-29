@@ -5,6 +5,6 @@ $(document).ready(function() {
 	pin_datos.forEach(function(element) {
 	    console.log(element);
 	    //$('.photos').append('<img src="dist/img/' + element.image_url + '">');
-	    $('.photos').append('<div class="singles"><img class="img_pinterest" src="dist/img/' + element.image_url + '"><h3 class="title">'+ element.title +'</h3><p class="description">' + element.description + '</p><p class="user">'+ element.user + '</p><p class="hashtag">' + '#'+ element.hashtag +'</p></div>');
+	    $('.totalfotos').append('<div class="singles"><img class="img_pinterest" src="dist/img/' + element.image_url + '"><h3 class="title">'+ element.title +'</h3><p class="description">' + element.description + '</p><p class="user">'+'<i class="fa fa-user-circle" aria-hidden="true"></i> ' + element.user + '</p><p class="hashtag">' + '#'+ element.hashtag +'</p></div>');
 	});
 });

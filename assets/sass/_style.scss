@@ -1,20 +1,120 @@
-//section photos
-.singles {
-	display: inline-block;
-	width:23%;
-	margin-left:20px;
-	margin-top: 20px;
-    line-height: 17px;
-    font-size: 15px;
-    padding: 1px;
-	& .img_pinterest{
-		width:94%;
-		border-radius:14px;
+nav{
+	background-color: whitesmoke !important;
+	& .logo{
+		color: darkslategray;
+		@include margin_nav;
+		&	.fa-pinterest {
+			font-size: 30px;
+			color: #bd081c;
+			@include margin_nav;
+		}
 	}
-	& .title {
-    font-size: 17px;
-    font-weight: 700;
-    margin-top: 9px;
-    margin-bottom: 5px;
+	& .search{
+		width: 50%;
+		height: 2.5rem;
+		border-radius: 7px;
+		border: none;
+	}
+	& .options{
+		height: 2.5rem;
+		width: 12%;
+		@include esp_icon;
+	}
+	& .fa-user-circle-o {
+		font-size: 23px;
+		@include esp_icon;
+	}
+	& .usuario{
+		@include esp_icon;
+	}
+	& .fa-bars{
+		font-size: 23px;
+		@include esp_icon;
+	}
+	& .notification{
+		display: inline-block;
+		float: right;
+		margin-left: 9px;
+    	margin-right: 11px;
+	}	
+}
+.navdos{
+	margin-left: 50px;
+	margin-right: 50px;
+	& .container-fluid{
+		& .row{
+			& .secciones{
+				height: 50px;
+				margin-top: 8px;
+				& .casillauno{
+					@include casilla;
+					background: linear-gradient(to right, #e1eec3, #f05053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					& .clasification{
+						@include pclasification;
+					}
+				}
+				& .casillados{
+					@include casilla;
+					background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					& .clasification{
+						@include pclasification;
+					}
+				}
+				& .casillatres{
+					@include casilla;
+					background: linear-gradient(to right, #22c1c3, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					& .clasification{
+						@include pclasification;
+					}
+				}
+				& .casillacuatro{
+					@include casilla;
+					background: linear-gradient(to right, #30e8bf, #ff8235); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					& .clasification{
+						@include pclasification;
+					}
+				}
+				
+			}
+		}
+	}
+}
+.todasfotos{
+	@extend .secciones;
+	& .container-fluid{
+		& .row{
+			& .totalfotos{
+				& .singles{
+					display: inline-block;
+					margin-left:20px;
+					margin-top: 20px;
+					font-size: 15px;
+					width:23%;
+					height: auto;
+					& .img_pinterest{
+						border-radius:14px;
+						width: 90%;
+					}
+					& .title {
+						font-size: 17px;
+						font-weight: 700;
+						margin-top: 9px;
+						margin-bottom: 5px;
+						}
+					& .user {
+						color: gray;
+						display: inline-block;
+					}
+					&i.fa.fa-user-circle {
+						color: lightpink;
+					}
+					& .hashtag{
+						float: right;
+						display: inline-block;	
+					}
+
+				}
+			}
+		}
 	}
 }
