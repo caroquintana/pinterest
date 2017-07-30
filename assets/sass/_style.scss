@@ -111,8 +111,43 @@ nav{
 					& .hashtag{
 						float: right;
 						display: inline-block;	
-					}
+					}	
+				}
+				& .modal{
+					max-height: 95%;
+					width: 30%;
+					top: 2% !important;
+					& .modal-content{
+						& .nav-modal{
+							& .nav-element{
+								display: inline-block;
+								margin-right: 160px;
+								margin-bottom: 20px;
+								& .icon-modal{
+									display: inherit;
+									font-size: 20px;
+									margin-right: 8px;
+									color: darkgray;
+								}
+							}
+							& .btn-guardar{
+								background-color: #bd081c;
+								color: #fff;
+								padding: 7px;
+								border-radius: 5px;
+							}
+						}
 
+						& .titulo_modal{
+							font-size: 18px;
+							font-weight: 600;
+							text-align: center;
+						}
+						& .img_modal{
+							width: 100%;
+							border-radius: 14px; 
+						}
+					}
 				}
 			}
 		}

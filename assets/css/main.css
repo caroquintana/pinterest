@@ -119,6 +119,31 @@ nav {
   .todasfotos .container-fluid .row .totalfotos .singles .hashtag {
     float: right;
     display: inline-block; }
+.todasfotos .container-fluid .row .totalfotos .modal {
+  max-height: 95%;
+  width: 30%;
+  top: 2% !important; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .nav-modal .nav-element {
+    display: inline-block;
+    margin-right: 160px;
+    margin-bottom: 20px; }
+    .todasfotos .container-fluid .row .totalfotos .modal .modal-content .nav-modal .nav-element .icon-modal {
+      display: inherit;
+      font-size: 20px;
+      margin-right: 8px;
+      color: darkgray; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .nav-modal .btn-guardar {
+    background-color: #bd081c;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .titulo_modal {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .img_modal {
+    width: 100%;
+    border-radius: 14px; }
 
 * {
   margin: 0;
