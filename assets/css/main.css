@@ -144,6 +144,18 @@ nav {
   .todasfotos .container-fluid .row .totalfotos .modal .modal-content .img_modal {
     width: 100%;
     border-radius: 14px; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .user-modal {
+    width: 35%; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .btn-leer {
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: darkgray;
+    float: right;
+    margin-top: -27px; }
+  .todasfotos .container-fluid .row .totalfotos .modal .modal-content .descripcion-modal {
+    text-align: left;
+    margin-top: 25px; }
 
 * {
   margin: 0;

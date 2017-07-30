@@ -132,9 +132,7 @@ nav{
 							}
 							& .btn-guardar{
 								background-color: #bd081c;
-								color: #fff;
-								padding: 7px;
-								border-radius: 5px;
+								@include btnmodal;
 							}
 						}
 
@@ -146,6 +144,19 @@ nav{
 						& .img_modal{
 							width: 100%;
 							border-radius: 14px; 
+						}
+						& .user-modal {
+							width: 35%;
+						}
+						& .btn-leer {
+							@include btnmodal;
+							background-color: darkgray;
+							float: right;
+							margin-top: -27px;
+						}
+						& .descripcion-modal{
+							text-align: left;
+							margin-top: 25px;
 						}
 					}
 				}
