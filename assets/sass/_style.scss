@@ -1,11 +1,11 @@
 nav{
-	background-color: whitesmoke !important;
+	background-color: $color_fondo;
 	& .logo{
-		color: darkslategray;
+		color: $color_iconos;
 		@include margin_nav;
 		&	.fa-pinterest {
 			font-size: 30px;
-			color: #bd081c;
+			color: $colorpinterest;
 			@include margin_nav;
 		}
 	}
@@ -48,28 +48,28 @@ nav{
 				margin-top: 8px;
 				& .casillauno{
 					@include casilla;
-					background: linear-gradient(to right, #e1eec3, #f05053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					background: $degradado_uno; 
 					& .clasification{
 						@include pclasification;
 					}
 				}
 				& .casillados{
 					@include casilla;
-					background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					background: $degradado_dos; 
 					& .clasification{
 						@include pclasification;
 					}
 				}
 				& .casillatres{
 					@include casilla;
-					background: linear-gradient(to right, #22c1c3, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					background: $degradado_tres;
 					& .clasification{
 						@include pclasification;
 					}
 				}
 				& .casillacuatro{
 					@include casilla;
-					background: linear-gradient(to right, #30e8bf, #ff8235); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					background: $degradado_cuatro;
 					& .clasification{
 						@include pclasification;
 					}
@@ -102,7 +102,7 @@ nav{
 						margin-bottom: 5px;
 						}
 					& .user {
-						color: gray;
+						color: $color_iconos;
 						display: inline-block;
 					}
 					&i.fa.fa-user-circle {
@@ -127,11 +127,11 @@ nav{
 									display: inherit;
 									font-size: 20px;
 									margin-right: 8px;
-									color: darkgray;
+									color: $color_interno;
 								}
 							}
 							& .btn-guardar{
-								background-color: #bd081c;
+								background-color: $colorpinterest;
 								@include btnmodal;
 							}
 						}
@@ -150,7 +150,7 @@ nav{
 						}
 						& .btn-leer {
 							@include btnmodal;
-							background-color: darkgray;
+							background-color: $color_interno;
 							float: right;
 							margin-top: -27px;
 						}
