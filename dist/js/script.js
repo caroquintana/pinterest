@@ -20269,16 +20269,17 @@ $(document).ready(function() {
 		var titulo = "";
 		var descripcion = "";
 		var usuario = "";
+		var hash = "";
 		var imagen = $(this).find("img").attr("src");
 		var titulo = $(this).find("h3").text();
 		var descripcion = $(this).find(".description").text();
 		var usuario = $(this).find(".user").text();
-		console.log(imagen);
+		var hash = $(this).find(".hashtag").text();
 
-		$('.modal-content').append('<div class="nav-modal"><ul class="nav-element"><li class="icon-modal"><i class="fa fa-share-square-o" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-check" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></li></ul><a href="#" class="btn-guardar"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Guardar</a></div><h4 class="titulo_modal">'+ titulo +'</h4><img class="img_modal" src=' + imagen + '><div class="nav-modal"><ul class="nav-element"><li class="icon-modal"><i class="fa fa-share-square-o" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-check" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></li></ul><a href="#" class="btn-guardar"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Guardar</a></div><p class="user-modal"><i class="fa fa-user-circle" aria-hidden="true"></i> '+ usuario +'</p><a href="#" class="btn-leer">Leerlo</a><p class="descripcion-modal">' + descripcion + '</p>');
+		$('.modal-content').append('<div class="nav-modal"><ul class="nav-element"><li class="icon-modal"><i class="fa fa-share-square-o" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-check" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></li></ul><a href="#" class="btn-guardar"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Guardar</a></div><h4 class="titulo_modal">'+ titulo +'</h4><img class="img_modal" src=' + imagen + '><div class="nav-modal"><ul class="nav-element"><li class="icon-modal"><i class="fa fa-share-square-o" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-check" aria-hidden="true"></i></li><li class="icon-modal"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></li></ul><a href="#" class="btn-guardar"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Guardar</a></div><p class="user-modal"><i class="fa fa-user-circle" aria-hidden="true"></i> '+ usuario + " " + hash +'</p><a href="#" class="btn-leer">Leerlo</a><p class="descripcion-modal">' + descripcion + '</p>');
 
 	});
-
+	/*
 	$(window).scroll(function() {
     	$.each($('img'), function() {
         if ( $(this).attr('data-src') && $(this).offset().top < ($(window).scrollTop() + $(window).height() + 4) ) {
@@ -20287,6 +20288,6 @@ $(document).ready(function() {
             $(this).removeAttr('data-src');
         	}
     	})
-	})
+	})*/
 
 });
